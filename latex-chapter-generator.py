@@ -18,6 +18,9 @@
 #   --id <id>   id prefix of the filename to have the files ordered (01, 02, ...)
 #   -n <name>   name of file/chapter to create
 #
+# TODO:
+#   - fix auto-id if no ID parameter was passed
+#
 #================================================================================
 
 from sys import argv
