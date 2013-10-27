@@ -9,7 +9,8 @@ public String createXml(List<MyLocation> locationList) {
         serializer.startTag("", "training");
         if (locationList.size() > 0) {
             serializer.startTag("", "datetime");
-            serializer.text(String.valueOf(locationList.get(o)
+            // don't know if next line is correct, due to c&p from skype
+            serializer.text(String.valueOf(locationList.getTime(0)
                         .getTimeAsLong()));
             serializer.endTag("", "datetime");
         }
