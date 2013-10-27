@@ -10,7 +10,8 @@ public String createXml(List<MyLocation> locationList) {
         if (locationList.size() > 0) {
             serializer.startTag("", "datetime");
             // don't know if next line is correct, due to c&p from skype
-            serializer.text(String.valueOf(locationList.getTime(0)
+            //serializer.text(String.valueOf(locationList.getTime(0)
+              serializer.text(String.valueOf(locationList.get(0)
                         .getTimeAsLong()));
             serializer.endTag("", "datetime");
         }
